@@ -1,22 +1,80 @@
-
-
-.calc{
-    border-color: black;
+body{
     display: flex;
-    width: 50%;
-    height: 500px;
+    flex-direction: column;
+    background-color: rgb(212, 216, 216);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{ display: flex;
+    justify-content: center;
+    width: 40%;
+    font-family: Lexend;
+    font-size: 30;
+    background-color: rgb(228, 245, 245);
+    border: 2px;
+    border-style:solid;
+    border-radius: 10px;
+    border-color: black;
+    padding: 9px;
+}
+.calc{
+    border-style: solid;
+    border-radius: 100px;
+    border-color: black;
+    background-color: rgb(96, 99, 98);
+    display: flex;
+    padding: 30px;
+    width: 200px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     border-radius: 3px;
+    margin-top: 8%;
+}
+
+.display{
+    display: flex;
+    justify-content: flex-end;
+    align-items: centers;
+    background-color: rgb(105, 168, 9);
+    border: black;
+    border-style: solid;
+    border-radius: 5px;
+    width: 90%;
+    height: 80px;
+    margin-bottom: 20px;
+
+    padding-right: 10px;
+    font-size: 24px;
+    color: white;
+    overflow: hidden;
+}
+
+.elements{ 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .rows{
     display: flex;
-    flex-direction: row;
-
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 button{
-    background-color: lightgrey;
+    border: black solid;
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-right: 10%;
+    font-family: Lexend;
+    background-color: rgb(238, 224, 32);
+    
+}
+
+button:hover {
+    background-color: rgb(255, 240, 50);
 }
