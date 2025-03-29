@@ -18,3 +18,15 @@ function divide(x, y){
 function operate(operator, x, y){
     return operator(x, y)
 }
+
+const display = document.querySelector(".display")
+const btn = document.querySelectorAll("button")
+
+
+btn.forEach((button) => {
+    button.addEventListener("click", () => {
+        display.textContent += button.textContent
+    })
+})
+
+
